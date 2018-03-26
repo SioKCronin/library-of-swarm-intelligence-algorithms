@@ -1,1 +1,1 @@
-# Institute for Nature-Inspired Algorithms
+# Library of Nature-Inspired Algorithms
