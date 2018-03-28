@@ -41,26 +41,21 @@
 ## Shuffled Frog Leaping Algorithm (SFLA)
 
 ## Intelligent Water Drops (IWD)
-
 River Formation Dynamics
 Biogeography-based Optimization (BBO)
 Roach Infestation Optimization (RIO)
 Bacterial Evolutionary Algorithm (BEA)
-Cuckoo Search (CS)
-Firefly Algorithm (FA) 
-Gravitational Search Algorithm (GSA)
-Group Search Optimizer
-League Championship Algorithm (LCA)
-Bat Algorithm
-Bumble Bees Mating Optimization (BBMO) Algorithm
-Eagle Strategy
-Fireworks algorithm for optimization
-Hunting Search
+## Cuckoo Search (CS)
+## Firefly Algorithm (FA) 
+## Gravitational Search Algorithm (GSA)
+## Bat Algorithm
+## Eagle Strategy
+## Fireworks algorithm
 Altruism Algorithm
-Spiral Dynamic Algorithm (SDA)
-Strawberry Algorithm
-Artificial Algae Algorithm (AAA) 
-Bacterial Colony Optimization
+## Spiral Dynamic Algorithm (SDA)
+## Strawberry Algorithm
+## Artificial Algae Algorithm (AAA) 
+## Bacterial Colony Optimization
 Differential Search Algorithm (DS
 Flower pollination algorithm (FPA)
 Krill Herd
@@ -70,10 +65,10 @@ Cuttlefish Algorithm
 Gases Brownian Motion Optimization
 Mine blast algorithm
 Plant Propagation Algorithm
-Social Spider Optimization (SSO)
-Spider Monkey Optimization (SMO) algorithm
-Animal Migration Optimization (AMO) Algorithm
-Artificial Ecosystem Algorithm (AEA)
+## Social Spider Optimization (SSO)
+## Spider Monkey Optimization (SMO) 
+## Animal Migration Optimization (AMO) 
+## Artificial Ecosystem Algorithm (AEA)
 Bird Mating Optimizer
 Forest Optimization Algorithm
 Golden Ball
@@ -84,22 +79,17 @@ Optics Inspired Optimization (OIO)
 The Raven Roosting Optimisation Algorithm
 Vortex Search Algorithm
 Water Wave Optimization
-collective animal behavior CAB algorithm
-Bumble bees mating optimization BBMO
+## Collective animal behavior (CAB)
 Parliamentary optimization algorithm POA
 Aritificial Chemical Process Algorithm
-Aritificial Chemical Reaction Optimization Algorithm
-Chemical Reaction Algorithm
+Aritificial Chemical Reaction Optimization
 Bull optimization algorithm
-Elephent herding optimization (EHO)
+
+## Elephent herding optimization (EHO)
+
+# Publications
 
 
-### Selection
+# Conferences
 
-
-### Crossover 
-
-### Mutation
-
-## Swarm Optimization
 
