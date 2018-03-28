@@ -4,15 +4,15 @@
 
 ### Particle Swarm Optimization (PSO)
 
-## Artificial immune systems (AIS) 
+### Artificial immune systems (AIS) 
 
-## Boids
+### Boids
 
-## Memetic Algorithm (MA)
+### Memetic Algorithm (MA)
 
-## Ant Colony Optimization (ACO)
+### Ant Colony Optimization (ACO)
 
-## Cultural Algorithms (CA)
+### Cultural Algorithms (CA)
 
 ## Particle Swarm Optimization (PSO)
 
