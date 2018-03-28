@@ -1,8 +1,8 @@
 # Library of Nature-Inspired Algorithms
 
-## Genetic Algorithms (GA)
+### Genetic Algorithms (GA)
 
-## Particle Swarm Optimization (PSO)
+### Particle Swarm Optimization (PSO)
 
 ## Artificial immune systems (AIS) 
 
