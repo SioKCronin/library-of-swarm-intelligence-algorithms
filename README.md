@@ -62,10 +62,10 @@
 
 # Publications
 
-[Algorithms](http://www.mdpi.com/journal/algorithms)
-[Journal of Algorithms](https://www.sciencedirect.com/journal/journal-of-algorithms)
-[Swarm and Evolutionary Computation](https://www.journals.elsevier.com/swarm-and-evolutionary-computation/)
-[International Journal of Swarm Intelligence and Evolutionary Computation](https://www.omicsonline.org/swarm-intelligence-evolutionary-computation.php#)
-[Swarm Intelligence](https://link.springer.com/journal/11721)
-[Evolutionary Intelligence](http://www.springer.com/engineering/computational+intelligence+and+complexity/journal/12065)
+* [Algorithms](http://www.mdpi.com/journal/algorithms)
+* [Journal of Algorithms](https://www.sciencedirect.com/journal/journal-of-algorithms)
+* [Swarm and Evolutionary Computation](https://www.journals.elsevier.com/swarm-and-evolutionary-computation/)
+* [International Journal of Swarm Intelligence and Evolutionary Computation](https://www.omicsonline.org/swarm-intelligence-evolutionary-computation.php#)
+* [Swarm Intelligence](https://link.springer.com/journal/11721)
+* [Evolutionary Intelligence](http://www.springer.com/engineering/computational+intelligence+and+complexity/journal/12065)
 
