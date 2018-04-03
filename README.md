@@ -37,7 +37,7 @@
 * Artificial Algae Algorithm (AAA) 
 * Bacterial Colony Optimization
 * Flower pollination algorithm (FPA)
-* Krill Herd
+* [Krill Herd](https://www.sciencedirect.com/science/article/pii/S1007570412002171)
 * Water Cycle Algorithm 
 * Black Holes Algorithm
 * Cuttlefish Algorithm
