@@ -69,6 +69,10 @@
 * [Swarm Intelligence](https://link.springer.com/journal/11721)
 * [Evolutionary Intelligence](http://www.springer.com/engineering/computational+intelligence+and+complexity/journal/12065)
 
+# Conferences
+
+* [GECCO](http://gecco-2018.sigevo.org/index.html/tiki-index.php?page=HomePage)
+
 # Research teams
 
 * [Tübingen](http://www.ra.cs.uni-tuebingen.de/links/genetisch/welcome_e.html)
