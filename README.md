@@ -1,5 +1,7 @@
 # Library of Nature-Inspired Algorithms
 
+Links to original papers introducing (or meta-analysis overviews of) the following algorithms/heuristics/methods:
+
 * Genetic Algorithms (GA)
 * Particle Swarm Optimization (PSO)
 * Artificial immune systems (AIS) 
