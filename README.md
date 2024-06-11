@@ -1,4 +1,4 @@
-# Library of Nature-Inspired Algorithms
+# Library of Nature-Inspired Algorithms [WIP]
 
 Links to original papers introducing (or meta-analysis overviews of) the following algorithms/heuristics/methods:
 
