@@ -1,4 +1,4 @@
-# Library of Nature-Inspired Algorithms [WIP]
+# Library of Nature-Inspired Optimization [WIP]
 
 Links to original papers introducing (or meta-analysis overviews of) the following algorithms/heuristics/methods:
 
@@ -78,3 +78,14 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 # Research teams
 
 * [Tübingen](http://www.ra.cs.uni-tuebingen.de/links/genetisch/welcome_e.html)
+
+
+## Bat Algorithm
+
+Implemented in `bat_algorithm.py` following Yang (2010). Run it with::
+
+```bash
+python bat_algorithm.py
+```
+
+The script includes a simple Rastrigin benchmark objective and reports the best solution found.
