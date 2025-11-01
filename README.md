@@ -1,4 +1,4 @@
-# Library of Nature-Inspired Optimization [WIP]
+# Nature-Inspired Optimization
 
 Links to original papers introducing (or meta-analysis overviews of) the following algorithms/heuristics/methods:
 
