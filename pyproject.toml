@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nio"
+version = "0.1.0"
+description = "Nature-inspired optimization toolkit"
+readme = "README.md"
+authors = [
+    { name = "Siobhan" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["optimization", "metaheuristics", "nature-inspired", "bat-algorithm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "black>=23",
+]
+
+[project.urls]
+Homepage = "https://github.com/siobhan/library-of-nature-inspired-optimization"
+Source = "https://github.com/siobhan/library-of-nature-inspired-optimization"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nio"]
+
+[tool.setuptools]
+include-package-data = true

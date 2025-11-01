@@ -80,12 +80,30 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * [Tübingen](http://www.ra.cs.uni-tuebingen.de/links/genetisch/welcome_e.html)
 
 
-## Bat Algorithm
+## Getting Started
 
-Implemented in `bat_algorithm.py` following Yang (2010). Run it with::
+Install the package locally in editable mode::
 
 ```bash
-python bat_algorithm.py
+pip install -e .
 ```
 
-The script includes a simple Rastrigin benchmark objective and reports the best solution found.
+Once installed you can import `nio` from anywhere on your system.
+
+### Using the Bat Algorithm
+
+```python
+from nio import BatAlgorithm
+
+optimizer = BatAlgorithm(bounds=[(-5.12, 5.12)] * 5, population_size=40, seed=42)
+best_position, best_value = optimizer.run(iterations=200)
+print(best_value)
+```
+
+### Command-line demo
+
+```bash
+python -m nio --iterations 200 --dimension 5
+```
+
+This runs the reference implementation from Yang (2010) on a Rastrigin benchmark.
