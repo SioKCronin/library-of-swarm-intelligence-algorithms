@@ -1,4 +1,4 @@
-# Nature-Inspired Optimization
+# Nature-Inspired Optimisation
 
 Links to original papers introducing (or meta-analysis overviews of) the following algorithms/heuristics/methods:
 
