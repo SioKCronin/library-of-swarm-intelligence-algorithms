@@ -30,7 +30,7 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * Cuckoo Search (CS)
 * Firefly Algorithm (FA) 
 * Gravitational Search Algorithm (GSA)
-* Bat Algorithm
+* [Bat Algorithm](https://www.sciencedirect.com/science/article/abs/pii/S1877750322002903)
 * Eagle Strategy
 * Fireworks algorithm
 * Altruism Algorithm
