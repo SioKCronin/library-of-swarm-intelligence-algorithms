@@ -8,15 +8,15 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * Boids
 * Memetic Algorithm (MA)
 * Ant Colony Optimization (ACO)
-* Cultural Algorithms (CA)
+* [Cultural Algorithms (CA)](https://link.springer.com/book/10.1007/978-981-19-4633-2)
 * Particle Swarm Optimization (PSO)
 * Self-propelled Particles
 * Differential Evolution (DE)
 * Bacterial Foraging Optimization
 * Marriage in Honey Bees (MHB) 
 * Artificial Fish School
-* Bacteria Chemotaxis (BC)
-* Social Cognitive Optimization (SCO)
+* [Bacteria Chemotaxis (BC)](https://ieeexplore.ieee.org/document/985689)
+* [Social Cognitive Optimization (SCO)](https://ieeexplore.ieee.org/document/5660738)
 * Artificial Bee Colony
 * Glowworm Swarm Optimization (GSO)
 * Honey-Bees Mating Optimization (HBMO)
