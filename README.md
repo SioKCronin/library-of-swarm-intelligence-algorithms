@@ -22,8 +22,8 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * Honey-Bees Mating Optimization (HBMO)
 * Invasive Weed Optimization (IWO)
 * Shuffled Frog Leaping Algorithm (SFLA)
-* Intelligent Water Drops (IWD)
-* River Formation Dynamics
+* [Intelligent Water Drops - Continuous Optimization(IWD-CO)](https://www.sciencedirect.com/science/article/pii/S1877042812000341)
+* [River Formation Dynamics](https://www.sciencedirect.com/science/article/abs/pii/S1877750317307184)
 * Biogeography-based Optimization (BBO)
 * Roach Infestation Optimization (RIO)
 * Bacterial Evolutionary Algorithm (BEA)
@@ -33,13 +33,13 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * [Bat Algorithm](https://www.sciencedirect.com/science/article/abs/pii/S1877750322002903)
 * [Phillippine Eagle Optimization Algorithm](https://ieeexplore.ieee.org/document/9732449)
 * Fireworks algorithm
-* Altruism Algorithm
+* [Altruistic Population Algorithm](https://www.sciencedirect.com/science/article/abs/pii/S037847542300109X)
 * Spiral Dynamic Algorithm (SDA)
 * Strawberry Algorithm
 * Artificial Algae Algorithm (AAA) 
 * Bacterial Colony Optimization
 * Flower pollination algorithm (FPA)
-* [Krill Herd](https://www.sciencedirect.com/science/article/pii/S1007570412002171)
+* Krill Herd
 * Water Cycle Algorithm 
 * Black Holes Algorithm
 * Cuttlefish Algorithm
@@ -51,12 +51,12 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * Animal Migration Optimization (AMO) 
 * Artificial Ecosystem Algorithm (AEA)
 * Bird Mating Optimizer
-* Forest Optimization Algorithm
+* [Forest Optimization Algorithm (FOA)](https://www.sciencedirect.com/science/article/abs/pii/S0957417414002899)
 * Grey Wolf Optimizer
 * Lion Optimization Algorithm (LOA)
 * Optics Inspired Optimization (OIO)
 * The Raven Roosting Optimisation Algorithm
-* Water Wave Optimization
+* [Water Wave Optimization](https://www.sciencedirect.com/science/article/pii/S0305054814002652)
 * Collective animal behavior (CAB)
 * Aritificial Chemical Process Algorithm
 * Bull optimization algorithm
