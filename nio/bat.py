@@ -147,7 +147,10 @@ class BatAlgorithm:
             raise ValueError("iterations must be positive")
 
         self.initialise()
-        for _ in range(iterations):
+        for iteration in range(iterations):
+            # Update stateful objectives (e.g., contracting optimum)
+            if hasattr(self.objective, 'update'):
+                self.objective.update(iteration)
             self.step()
         if self.best is None:
             raise RuntimeError("Algorithm did not initialise best solution")
