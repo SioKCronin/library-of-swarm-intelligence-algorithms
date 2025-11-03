@@ -61,6 +61,23 @@ def example_custom():
     print("✓ Visualization saved to ca_custom.gif")
 
 
+def example_html():
+    """Example creating interactive HTML visualization for browser."""
+    from nio.visualize_ca import visualize_ca_html
+    
+    print("Creating interactive HTML visualization...")
+    
+    html_path = visualize_ca_html(
+        bounds=((-5.12, 5.12), (-5.12, 5.12)),
+        population_size=30,
+        iterations=50,
+        save_path="ca_interactive.html",
+        seed=42,
+    )
+    print(f"✓ Interactive HTML saved to: {html_path}")
+    print("  Open in your browser to view!")
+
+
 def example_with_custom_objective():
     """Example with a custom 2D objective function."""
     import math
@@ -105,14 +122,16 @@ if __name__ == "__main__":
             example_simple()
         elif example_name == "custom":
             example_custom()
+        elif example_name == "html":
+            example_html()
         elif example_name == "rosenbrock":
             example_with_custom_objective()
         else:
             print(f"Unknown example: {example_name}")
-            print("Available: simple, custom, rosenbrock")
+            print("Available: simple, custom, html, rosenbrock")
     else:
-        print("\nRunning simple example...")
-        print("(Use 'simple', 'custom', or 'rosenbrock' as argument for different examples)")
+        print("\nRunning HTML example (opens in browser)...")
+        print("(Use 'simple', 'custom', 'html', or 'rosenbrock' as argument for different examples)")
         print()
-        example_simple()
+        example_html()
 

@@ -112,6 +112,23 @@ This runs the reference implementation from Yang (2010) on a Rastrigin benchmark
 
 Create animated visualizations showing the optimization process:
 
+**Interactive HTML Visualization (opens in browser):**
+
+```python
+from nio.visualize_ca import visualize_ca_html
+
+html_path = visualize_ca_html(
+    bounds=((-5.12, 5.12), (-5.12, 5.12)),
+    population_size=30,
+    iterations=50,
+    save_path="ca_visualization.html",
+    seed=42
+)
+# Opens in browser with interactive controls (play, pause, step, slider)
+```
+
+**Video/GIF Visualization:**
+
 ```bash
 # Install visualization dependencies
 pip install matplotlib numpy
@@ -140,5 +157,7 @@ The visualization shows:
 - Normative bounds from belief space (green rectangle)
 - Situational knowledge (orange squares)
 - Objective function contour
+
+The HTML version includes interactive controls: play/pause, step-by-step navigation, and a slider to jump to any iteration.
 
 See `examples/README.md` for more visualization examples.
