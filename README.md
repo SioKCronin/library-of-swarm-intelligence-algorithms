@@ -31,7 +31,7 @@ Links to original papers introducing (or meta-analysis overviews of) the followi
 * Firefly Algorithm (FA) 
 * Gravitational Search Algorithm (GSA)
 * [Bat Algorithm](https://www.sciencedirect.com/science/article/abs/pii/S1877750322002903)
-* Eagle Strategy
+* [Phillippine Eagle Optimization Algorithm](https://ieeexplore.ieee.org/document/9732449)
 * Fireworks algorithm
 * Altruism Algorithm
 * Spiral Dynamic Algorithm (SDA)
