@@ -107,3 +107,38 @@ python -m nio --iterations 200 --dimension 5
 ```
 
 This runs the reference implementation from Yang (2010) on a Rastrigin benchmark.
+
+### Visualizing the Cultural Algorithm
+
+Create animated visualizations showing the optimization process:
+
+```bash
+# Install visualization dependencies
+pip install matplotlib numpy
+
+# Create visualization
+python -m nio.visualize_ca --iterations 50 --population-size 30 --output ca_optimization.mp4
+```
+
+Or use in Python:
+
+```python
+from nio.visualize_ca import visualize_ca
+
+visualize_ca(
+    bounds=((-5.12, 5.12), (-5.12, 5.12)),
+    population_size=30,
+    iterations=50,
+    save_path="ca_optimization.mp4",
+    seed=42
+)
+```
+
+The visualization shows:
+- Population individuals (blue dots)
+- Best individual (red star)
+- Normative bounds from belief space (green rectangle)
+- Situational knowledge (orange squares)
+- Objective function contour
+
+See `examples/README.md` for more visualization examples.

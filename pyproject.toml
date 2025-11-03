@@ -26,6 +26,10 @@ dev = [
     "pytest>=7",
     "black>=23",
 ]
+viz = [
+    "matplotlib>=3.5",
+    "numpy>=1.20",
+]
 
 [project.urls]
 Homepage = "https://github.com/siobhan/library-of-nature-inspired-optimization"
