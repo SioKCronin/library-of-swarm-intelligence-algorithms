@@ -296,16 +296,15 @@ class CAVisualizer:
 
         plt.close(fig)
 
-    def create_html_visualization(self, iterations: int, output_path: str = "ca_visualization.html", auto_open: bool = True) -> str:
-        """Create an interactive HTML visualization that opens in browser.
+    def create_html_visualization(self, iterations: int, output_path: str = "ca_visualization.html") -> str:
+        """Create an interactive HTML visualization that can be opened in a browser.
 
         Args:
             iterations: Number of iterations to run
             output_path: Path to save HTML file
-            auto_open: If True, automatically start server and open browser
 
         Returns:
-            URL to access the visualization (if auto_open) or path to HTML file
+            Path to the generated HTML file
         """
         if not HAS_MATPLOTLIB:
             raise ImportError(
@@ -331,79 +330,9 @@ class CAVisualizer:
             f.write(html_content)
         
         abs_path = os.path.abspath(output_path)
-        
-        if auto_open:
-            # Start a local server and open browser
-            return self._serve_and_open(abs_path)
-        else:
-            print(f"Interactive visualization saved to: {abs_path}")
-            print(f"Open in browser: file://{abs_path}")
-            return abs_path
-
-    def _serve_and_open(self, html_path: str, port: int = 8000) -> str:
-        """Start a local HTTP server and open the visualization in browser.
-        
-        Args:
-            html_path: Absolute path to HTML file
-            port: Port number for the server (will try ports up to port+9)
-            
-        Returns:
-            URL to access the visualization
-        """
-        import http.server
-        import socketserver
-        import webbrowser
-        import threading
-        import time
-        
-        # Get the directory and filename
-        html_dir = os.path.dirname(html_path)
-        html_filename = os.path.basename(html_path)
-        
-        # Change to the directory containing the HTML file
-        original_dir = os.getcwd()
-        os.chdir(html_dir)
-        
-        try:
-            # Find an available port
-            for attempt_port in range(port, port + 10):
-                try:
-                    handler = http.server.SimpleHTTPRequestHandler
-                    
-                    # Create server
-                    httpd = socketserver.TCPServer(("", attempt_port), handler, bind_and_activate=False)
-                    httpd.allow_reuse_address = True
-                    httpd.server_bind()
-                    httpd.server_activate()
-                    
-                    # Start server in a separate thread
-                    server_thread = threading.Thread(target=httpd.serve_forever, daemon=True)
-                    server_thread.start()
-                    
-                    # Construct URL
-                    url = f"http://localhost:{attempt_port}/{html_filename}"
-                    
-                    # Open browser
-                    print(f"\n{'='*60}")
-                    print(f"✓ Server started on http://localhost:{attempt_port}")
-                    print(f"✓ Opening visualization in your browser...")
-                    print(f"\n  URL: {url}")
-                    print(f"  Press Ctrl+C to stop the server")
-                    print(f"{'='*60}\n")
-                    
-                    webbrowser.open(url)
-                    
-                    # Return URL immediately (server runs in background)
-                    return url
-                    
-                except OSError:
-                    # Port in use, try next
-                    continue
-            
-            raise RuntimeError(f"Could not find an available port in range {port}-{port+9}")
-            
-        finally:
-            os.chdir(original_dir)
+        print(f"Interactive visualization saved to: {abs_path}")
+        print(f"Open in browser: file://{abs_path}")
+        return abs_path
 
     def _generate_html_content(self) -> str:
         """Generate HTML content with embedded visualization using Plotly."""
@@ -699,7 +628,6 @@ def visualize_ca_html(
     iterations: int = 50,
     save_path: Optional[str] = None,
     seed: Optional[int] = None,
-    auto_open: bool = True,
     **ca_kwargs
 ) -> str:
     """Convenience function to create interactive HTML visualization.
@@ -710,11 +638,10 @@ def visualize_ca_html(
         iterations: Number of iterations
         save_path: Path to save HTML file (default: ca_visualization.html)
         seed: Random seed
-        auto_open: If True, automatically start server and open browser
         **ca_kwargs: Additional arguments for CulturalAlgorithm
 
     Returns:
-        URL to access the visualization (if auto_open) or path to HTML file
+        Absolute path to the generated HTML file
     """
     if not HAS_MATPLOTLIB:
         raise ImportError(
@@ -733,7 +660,7 @@ def visualize_ca_html(
     # Create visualizer
     output_path = save_path or "ca_visualization.html"
     visualizer = CAVisualizer(ca, save_path="dummy.mp4")  # Save path not used for HTML
-    return visualizer.create_html_visualization(iterations, output_path, auto_open=auto_open)
+    return visualizer.create_html_visualization(iterations, output_path)
 
 
 def main() -> None:
