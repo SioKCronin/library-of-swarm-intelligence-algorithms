@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "etda"
+version = "0.1.0"
+description = "Evolutionary Topological Data Analysis - Integration of swarm optimization with giotto-tda"
+readme = "README.md"
+authors = [
+    { name = "Siobhan" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["topological-data-analysis", "tda", "optimization", "swarm-intelligence", "persistence-homology"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+dependencies = [
+    "giotto-tda>=1.2.0",
+    "numpy>=1.20",
+    "scikit-learn>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "black>=23",
+]
+viz = [
+    "matplotlib>=3.5",
+    "plotly>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/siobhan/etda"
+Source = "https://github.com/siobhan/etda"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["etda*"]
+
+[tool.setuptools]
+include-package-data = true
+
